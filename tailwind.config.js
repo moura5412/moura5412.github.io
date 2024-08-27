@@ -4,6 +4,16 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      filter: {
+        'filter-white': 'invert(100%) sepia(98%) saturate(10%) hue-rotate(189deg) brightness(102%) contrast(103%)',
+        'filter-black': 'invert(0%) sepia(100%) saturate(7460%) hue-rotate(59deg) brightness(105%) contrast(111%)',
+        'filter-blue': 'invert(27%) sepia(55%) saturate(6254%) hue-rotate(252deg) brightness(97%) contrast(87%)',
+      },
+      colors: {
+        customColor: {
+          blue: '#7843e9',
+        },
+      },
       animation: {
         fadeInUp: "fadeInUp 500ms ease-out",
         loader: "loader 600ms linear infinite",
@@ -62,6 +72,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwindcss-filters'),
     plugin(function ({ addUtilities }) {
       addUtilities({
         ".rotate-y-90": {
