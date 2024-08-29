@@ -1,1 +1,6 @@
-Header set Access-Control-Allow-Origin https://gabrielmouradev.com.br
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "https://gabrielmouradev.com.br"
+    Header add Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept"
+    Header add Access-Control-Allow-Methods   
+ "GET, POST, OPTIONS"
+</IfModule>
