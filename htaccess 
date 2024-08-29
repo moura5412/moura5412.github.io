@@ -1,1 +1,6 @@
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "https://gabrielmouradev.com.br"
+    Header add Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header add Access-Control-Allow-Headers "Content-Type, Authorization"
+</IfModule>
 Redirect 301 / https://gabrielmouradev.com.br/
