@@ -25,9 +25,9 @@ export const ProjetosList: ProjetosListType[] = [
     skills: ["HTML", "CSS", "JavaScript", "PHP"],
   },
   {
-    title: "Marmoraria Multiformas",
-    img: "/images/marmoraria.png",
-    link: "https://www.marmorariamultiformas.com.br/",
+    title: "Padaria ponto quente",
+    img: "/images/paradapontoquente.png",
+    link: "https://www.padariapontoquente.com.br/",
     skills: ["HTML", "CSS", "JavaScript", "PHP"],
   },
   {
